@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///C:/Users/Guest/Desktop/desktop1/form.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  padding: 16px;
+  background-color:#B55513;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+}
+</style>
+</head>
+<body>
+
+<form action="file:///C:/action_page.php">
+  <div class="container">
+    <h1>Review Us</h1>
+    <p>Please fill in this form to review ua.</p>
+    <hr>
+     <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter name" name="Name" id="Name" required="">
+    
+    <label for="surname"><b>Surname</b></label>
+    <input type="text" placeholder="Enter surname" name="surname" id="Surname" required="">
+ 
+    <label for="age"><b>Age</b></label>
+    <input type="text" placeholder="Enter age" name="age" id="age" required="">
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required="">
+
+    <label for="Comments"><b>Comments</b></label>
+    <input type="text" placeholder="Enter Comments" name="Comments" id="CommentsS" required="">
+
+   <!-- <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+<h1><b>Subjects</b></h1>-->
+<label class="container">Did you get a good customer service?
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Did you get good food?
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Would you like to come here again?
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Would you recomend our cafe to friends too?
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<hr>
+ <label for="birthday"><b>Birthday:</b></label>
+  <input type="date" id="birthday" name="birthday">
+  <input type="submit">
+<hr>
+<b>gender</b>
+ <select id="gender" name="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+<hr>  
+
+
+    <button type="submit" class="registerbtn">Submit</button>
+  </div>
+</form>
+
+</body></html>
